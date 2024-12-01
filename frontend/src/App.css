@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+
+}
+li {
+  list-style: none;
+  /*display:inline-flex*/
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Spinner*/
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border-left-color: #993463;
+  animation: spin 1s ease infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
